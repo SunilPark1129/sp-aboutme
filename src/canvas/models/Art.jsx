@@ -18,7 +18,7 @@ function Art() {
         <mesh position-x={0.15} position-y={-0.02} castShadow receiveShadow>
           <boxGeometry args={[0.2, 3.86, 3]} />
           <meshStandardMaterial />
-          <mesh position-x={0.11} rotation-y={THREE.MathUtils.degToRad(90)}>
+          <mesh position-x={0.105} rotation-y={THREE.MathUtils.degToRad(90)}>
             <planeGeometry args={[3, 3.86]} />
             <meshBasicMaterial map={texturesPainting} color={"#cfcfcf"} />
           </mesh>

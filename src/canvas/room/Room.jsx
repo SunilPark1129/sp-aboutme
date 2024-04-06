@@ -24,6 +24,7 @@ function Room() {
         <mesh position-x={-11.5} position-y={6.5} receiveShadow>
           <boxGeometry args={[1, 12, 24]} />
           <meshStandardMaterial
+            color={"#999999"}
             map={texturesWall.map}
             roughnessMap={texturesWall.roughnessMap}
             roughnessMap-colorSpace={THREE.NoColorSpace}
@@ -41,6 +42,7 @@ function Room() {
         <mesh position-z={-11.5} position-y={6.5} receiveShadow>
           <boxGeometry args={[24, 12, 1]} />
           <meshStandardMaterial
+            color={"#999999"}
             map={texturesWall.map}
             roughnessMap={texturesWall.roughnessMap}
             roughnessMap-colorSpace={THREE.NoColorSpace}
@@ -58,6 +60,7 @@ function Room() {
         <mesh receiveShadow>
           <boxGeometry args={[24, 1, 24]} />
           <meshStandardMaterial
+            color={"#4e4e4e"}
             map={texturesFloor.map}
             roughnessMap={texturesFloor.roughnessMap}
             roughnessMap-colorSpace={THREE.NoColorSpace}
@@ -74,15 +77,15 @@ function Room() {
 
         <mesh position-y={13} position-x={-6} position-z={-6}>
           <boxGeometry args={[12, 1, 12]} />
-          <meshStandardMaterial color={"#464646"} />
+          <meshStandardMaterial color={"#080808"} />
         </mesh>
         <mesh position-y={13} position-x={-9} position-z={3}>
           <boxGeometry args={[6, 1, 6]} />
-          <meshStandardMaterial color={"#464646"} />
+          <meshStandardMaterial color={"#080808"} />
         </mesh>
         <mesh position-y={13} position-x={3} position-z={-9}>
           <boxGeometry args={[6, 1, 6]} />
-          <meshStandardMaterial color={"#464646"} />
+          <meshStandardMaterial color={"#080808"} />
         </mesh>
       </group>
     </>

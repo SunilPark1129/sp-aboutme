@@ -21,7 +21,7 @@ function Room() {
   return (
     <>
       <group position-y={-5}>
-        <mesh position-x={-11.5} position-y={6.5}>
+        <mesh position-x={-11.5} position-y={6.5} receiveShadow>
           <boxGeometry args={[1, 12, 24]} />
           <meshStandardMaterial
             map={texturesWall.map}
@@ -33,13 +33,13 @@ function Room() {
             normalScale={1}
             displacementMap={texturesWall.displacementMap}
             displacementMap-colorSpace={THREE.NoColorSpace}
-            displacementScale={0.35}
-            displacementBias={-0.24}
+            displacementScale={0}
+            displacementBias={-0}
             aoMap={texturesWall.aoMap}
           />
         </mesh>
 
-        <mesh position-z={-11.5} position-y={6.5}>
+        <mesh position-z={-11.5} position-y={6.5} receiveShadow>
           <boxGeometry args={[24, 12, 1]} />
           <meshStandardMaterial
             map={texturesWall.map}
@@ -51,13 +51,13 @@ function Room() {
             normalScale={1}
             displacementMap={texturesWall.displacementMap}
             displacementMap-colorSpace={THREE.NoColorSpace}
-            displacementScale={0.35}
-            displacementBias={-0.24}
+            displacementScale={0}
+            displacementBias={-0}
             aoMap={texturesWall.aoMap}
           />
         </mesh>
 
-        <mesh>
+        <mesh receiveShadow>
           <boxGeometry args={[24, 1, 24]} />
           <meshStandardMaterial
             map={texturesFloor.map}
@@ -69,8 +69,8 @@ function Room() {
             normalScale={1}
             displacementMap={texturesFloor.displacementMap}
             displacementMap-colorSpace={THREE.NoColorSpace}
-            displacementScale={0.37}
-            displacementBias={-0.2}
+            displacementScale={0}
+            displacementBias={-0}
             aoMap={texturesFloor.aoMap}
           />
         </mesh>

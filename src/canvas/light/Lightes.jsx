@@ -7,20 +7,33 @@ import { useHelper } from "@react-three/drei";
 RectAreaLightUniformsLib.init();
 
 function Lights() {
-  const light = useRef();
-  useHelper(light, RectAreaLightHelper);
+  const light1 = useRef();
+  useHelper(light1, RectAreaLightHelper);
+
+  const light2 = useRef();
+  useHelper(light2, RectAreaLightHelper);
 
   return (
     <>
       <ambientLight intensity={0.2} />
 
       <rectAreaLight
-        ref={light}
+        ref={light1}
         color="#ffffff"
         intensity={5}
         width={2}
-        height={5}
-        position={[0, 6.5, 0]}
+        height={8}
+        position={[-8, 7.45, 0]}
+        rotation-x={THREE.MathUtils.degToRad(-90)}
+      />
+
+      <rectAreaLight
+        ref={light2}
+        color="#ffffff"
+        intensity={5}
+        width={8}
+        height={2}
+        position={[0, 7.45, -8]}
         rotation-x={THREE.MathUtils.degToRad(-90)}
       />
     </>

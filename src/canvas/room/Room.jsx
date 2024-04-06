@@ -25,12 +25,11 @@ function Room() {
           <boxGeometry args={[1, 12, 24]} />
           <meshStandardMaterial
             map={texturesWall.map}
-            side={THREE.DoubleSide}
             roughnessMap={texturesWall.roughnessMap}
             roughnessMap-colorSpace={THREE.NoColorSpace}
             normalMap={texturesWall.normalMap}
             normalMap-colorSpace={THREE.NoColorSpace}
-            normalScale={1}
+            normalScale={3}
             displacementMap={texturesWall.displacementMap}
             displacementMap-colorSpace={THREE.NoColorSpace}
             displacementScale={0}
@@ -43,12 +42,11 @@ function Room() {
           <boxGeometry args={[24, 12, 1]} />
           <meshStandardMaterial
             map={texturesWall.map}
-            side={THREE.DoubleSide}
             roughnessMap={texturesWall.roughnessMap}
             roughnessMap-colorSpace={THREE.NoColorSpace}
             normalMap={texturesWall.normalMap}
             normalMap-colorSpace={THREE.NoColorSpace}
-            normalScale={1}
+            normalScale={3}
             displacementMap={texturesWall.displacementMap}
             displacementMap-colorSpace={THREE.NoColorSpace}
             displacementScale={0}
@@ -61,7 +59,6 @@ function Room() {
           <boxGeometry args={[24, 1, 24]} />
           <meshStandardMaterial
             map={texturesFloor.map}
-            side={THREE.DoubleSide}
             roughnessMap={texturesFloor.roughnessMap}
             roughnessMap-colorSpace={THREE.NoColorSpace}
             normalMap={texturesFloor.normalMap}

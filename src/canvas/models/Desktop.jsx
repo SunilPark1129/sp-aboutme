@@ -73,7 +73,6 @@ function Desktop() {
           <meshStandardMaterial
             color={"#6d6e6d"}
             map={texturesWood.map}
-            side={THREE.DoubleSide}
             roughnessMap={texturesWood.roughnessMap}
             roughnessMap-colorSpace={THREE.NoColorSpace}
             normalMap={texturesWood.normalMap}

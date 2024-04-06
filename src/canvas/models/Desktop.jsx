@@ -34,7 +34,7 @@ function Desktop() {
               castShadow
             >
               <planeGeometry args={[3.2, 1.8]} />
-              <meshBasicMaterial map={texturesDesktopImg} />
+              <meshBasicMaterial map={texturesDesktopImg} color={"#f3d5bc"} />
             </mesh>
           </mesh>
 

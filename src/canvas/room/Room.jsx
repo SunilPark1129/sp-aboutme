@@ -1,4 +1,4 @@
-import { useTexture } from "@react-three/drei";
+import { Text, useTexture } from "@react-three/drei";
 import React from "react";
 import * as THREE from "three";
 
@@ -90,6 +90,16 @@ function Room() {
         <mesh position-y={13} position-x={3} position-z={-9}>
           <boxGeometry args={[6, 1, 6]} />
           <meshStandardMaterial color={"#080808"} />
+        </mesh>
+
+        <mesh>
+          <Text
+            fontSize={0.4}
+            position={[12.1, 0, -10]}
+            rotation-y={THREE.MathUtils.degToRad(90)}
+          >
+            dev. - Sunil Park
+          </Text>
         </mesh>
       </group>
     </>

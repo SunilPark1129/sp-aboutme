@@ -3,13 +3,13 @@ import CanvasScreen from "./canvas/CanvasScreen";
 import ScreenUI from "./screen/ScreenUI";
 
 function App() {
-  const [hasClickedMesh, setHasClickedMesh] = useState(null);
+  const [meshTopic, setMeshTopic] = useState(null);
   const [item, setItem] = useState(null);
   const [camera, setCamera] = useState(null);
 
   //
   function getTopic(x) {
-    setHasClickedMesh(x);
+    setMeshTopic(x);
   }
 
   function getCamera(cam, orb) {
@@ -24,8 +24,8 @@ function App() {
     <div className="main">
       <CallbackCanvas />
       <ScreenUI
-        hasClickedMesh={hasClickedMesh}
-        setHasClickedMesh={setHasClickedMesh}
+        meshTopic={meshTopic}
+        setMeshTopic={setMeshTopic}
         camera={camera}
       />
     </div>

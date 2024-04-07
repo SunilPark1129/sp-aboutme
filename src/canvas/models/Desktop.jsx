@@ -10,7 +10,7 @@ function Desktop() {
 
   return (
     <>
-      <group position={[-8, 0, -4]}>
+      <group position={[-8, 0, -2]}>
         {/* desktop */}
         <mesh position-y={0.7} receiveShadow castShadow>
           <mesh rotation-z={0.1} position-y={0.2} receiveShadow castShadow>

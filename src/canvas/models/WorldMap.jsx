@@ -7,7 +7,7 @@ function WorldMap() {
   );
   return (
     <>
-      <group position-x={6} position-z={-10.95} position-y={2}>
+      <group position-x={7} position-z={-10.95} position-y={1}>
         <mesh>
           <planeGeometry args={[7, 3.4]} />
           <meshBasicMaterial map={texturesPainting} color={"#817a7a"} />

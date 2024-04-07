@@ -12,7 +12,7 @@ function Art() {
         rotation-z={THREE.MathUtils.degToRad(10)}
         position-y={-0.1}
         position-x={-7}
-        position-z={2}
+        position-z={5}
       >
         {/* canvas */}
         <mesh position-x={0.15} position-y={-0.02} castShadow receiveShadow>

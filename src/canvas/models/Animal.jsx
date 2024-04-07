@@ -30,7 +30,7 @@ function Animal() {
   });
   return (
     <>
-      <group position-x={-3} position-z={-9}>
+      <group position-x={-1} position-z={-9}>
         <group position-y={0.25}>
           {/* glass */}
           <mesh receiveShadow castShadow>

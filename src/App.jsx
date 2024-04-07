@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import CanvasScreen from "./canvas/CanvasScreen";
 import ScreenUI from "./screen/ScreenUI";
+import BackgroundUI from "./screen/BackgroundUI";
 
 function App() {
   const [meshTopic, setMeshTopic] = useState(null);
@@ -28,6 +29,7 @@ function App() {
         setMeshTopic={setMeshTopic}
         camera={camera}
       />
+      <BackgroundUI />
     </div>
   );
 }

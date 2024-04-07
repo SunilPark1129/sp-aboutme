@@ -39,9 +39,9 @@ function ClickableCircle({ isLeft, topic, getTopic, orbitRef }) {
         fontSize={0.4}
         position-y={0.6}
         rotation-y={isLeft ? THREE.MathUtils.degToRad(90) : 0}
-        color={hasHovered ? "#676fdb" : "#fff"}
+        color={"#676fdb"}
       >
-        {topic}
+        {hasHovered ? topic : ""}
       </Text>
     </mesh>
   );

@@ -7,7 +7,7 @@ import Models from "./models/Models";
 
 function CanvasScreen() {
   return (
-    <Canvas shadows camera={{ position: [10, 5, 10] }}>
+    <Canvas shadows camera={{ position: [15, 0, 20] }}>
       <Camera />
       <Lights />
       <Room />

@@ -5,7 +5,6 @@ function Camera() {
   return (
     <>
       <OrbitControls />
-      <axesHelper scale={10} />
 
       <mesh></mesh>
     </>

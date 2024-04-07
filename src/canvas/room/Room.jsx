@@ -21,6 +21,7 @@ function Room() {
   return (
     <>
       <group position-y={-5}>
+        {/* wall */}
         <mesh position-x={-11.5} position-y={6.5} receiveShadow>
           <boxGeometry args={[1, 12, 24]} />
           <meshStandardMaterial
@@ -39,6 +40,7 @@ function Room() {
           />
         </mesh>
 
+        {/* wall */}
         <mesh position-z={-11.5} position-y={6.5} receiveShadow>
           <boxGeometry args={[24, 12, 1]} />
           <meshStandardMaterial
@@ -57,6 +59,7 @@ function Room() {
           />
         </mesh>
 
+        {/* floor */}
         <mesh receiveShadow>
           <boxGeometry args={[24, 1, 24]} />
           <meshStandardMaterial
@@ -75,6 +78,7 @@ function Room() {
           />
         </mesh>
 
+        {/* ceiling */}
         <mesh position-y={13} position-x={-6} position-z={-6}>
           <boxGeometry args={[12, 1, 12]} />
           <meshStandardMaterial color={"#080808"} />

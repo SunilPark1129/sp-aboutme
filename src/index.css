@@ -42,7 +42,7 @@
 .bg__btn__circle {
   width: 2rem;
   height: 2rem;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid #36447e;
   border-radius: 50%;
   position: absolute;
   left: 0;
@@ -60,6 +60,7 @@
   padding: 0.2rem;
   width: 2rem;
   height: 2rem;
+  stroke: #36447e;
 }
 
 .bg__btn:has(.bg__btn__circle--active) svg {

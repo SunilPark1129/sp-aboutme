@@ -6,58 +6,58 @@ export const positionData = {
       ...fixedOptions,
       x: 1,
       y: 0,
-      z: 6,
+      z: 5,
     },
     orbit: {
       ...fixedOptions,
-      x: -6,
+      x: -4,
       y: -1,
-      z: 3,
+      z: 5,
     },
   },
 
   Skill: {
     camera: {
       ...fixedOptions,
-      x: -0.2,
+      x: 1,
       y: 1,
-      z: -3,
+      z: -2,
     },
     orbit: {
       ...fixedOptions,
-      x: -14,
+      x: -18,
       y: 0,
-      z: -4,
+      z: -2.5,
     },
   },
 
   Me: {
     camera: {
       ...fixedOptions,
-      x: 4,
-      y: 2,
-      z: -2,
+      x: -1,
+      y: 4,
+      z: 2,
     },
     orbit: {
       ...fixedOptions,
-      x: -4,
-      y: -2,
-      z: -20,
+      x: -1,
+      y: -6,
+      z: -16,
     },
   },
 
   Country: {
     camera: {
       ...fixedOptions,
-      x: 12,
+      x: 6,
       y: 2,
-      z: -6,
+      z: -2,
     },
     orbit: {
       ...fixedOptions,
-      x: -4,
+      x: 8,
       y: -2,
-      z: -28,
+      z: -26,
     },
   },
 };

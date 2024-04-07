@@ -10,25 +10,10 @@ RectAreaLightUniformsLib.init();
 function Lights() {
   const light1 = useRef();
   useHelper(light1, RectAreaLightHelper);
-
   const light2 = useRef();
   useHelper(light2, RectAreaLightHelper);
-
   const light3 = useRef();
-  // useHelper(light3, THREE.PointLightHelper);
-
   const light4 = useRef();
-  // useHelper(light4, THREE.PointLightHelper);
-
-  // const { scene } = useThree();
-
-  // const width = 10;
-  // const height = 10;
-  // const intensity = 1;
-  // const rectLight = new THREE.RectAreaLight(0xffffff, intensity, width, height);
-  // rectLight.position.set(5, 10, 5);
-  // rectLight.lookAt(0, 0, 0);
-  // scene.add(rectLight);
 
   return (
     <>

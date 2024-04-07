@@ -1,10 +1,15 @@
 import { OrbitControls } from "@react-three/drei";
-import React from "react";
+import { useThree } from "@react-three/fiber";
+import React, { useEffect } from "react";
 
-function Camera() {
+function Camera({ orbitRef, getCamera }) {
+  const { camera } = useThree();
+  useEffect(() => {
+    getCamera(camera, orbitRef);
+  }, []);
   return (
     <>
-      <OrbitControls />
+      <OrbitControls ref={orbitRef} />
 
       <mesh></mesh>
     </>

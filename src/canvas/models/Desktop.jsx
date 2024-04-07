@@ -2,8 +2,9 @@ import { useTexture } from "@react-three/drei";
 import React from "react";
 import * as THREE from "three";
 import Table from "./Table";
+import ClickableCircle from "./ClickableCircle";
 
-function Desktop() {
+function Desktop(props) {
   const texturesDesktopImg = new THREE.TextureLoader().load(
     "./image/desktop/vscodeimage.png"
   );
@@ -11,6 +12,8 @@ function Desktop() {
   return (
     <>
       <group position={[-8, 0, -2]}>
+        <ClickableCircle isLeft={true} {...props} />
+
         {/* desktop */}
         <mesh position-y={0.7} receiveShadow castShadow>
           <mesh rotation-z={0.1} position-y={0.2} receiveShadow castShadow>

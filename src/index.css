@@ -6,10 +6,18 @@
 }
 
 body {
-  background-color: #899eb9;
+  background-color: #9bb8e4;
 }
 
 .main {
   width: 100%;
   height: 100vh;
+}
+
+.screen {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
 }

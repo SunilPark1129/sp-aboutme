@@ -3,7 +3,8 @@ import { useFrame } from "@react-three/fiber";
 import React, { useRef } from "react";
 import * as THREE from "three";
 import Table from "./Table";
-function Animal() {
+import ClickableCircle from "./ClickableCircle";
+function Animal(props) {
   const fish1 = useRef();
   const fish2 = useRef();
   const fish3 = useRef();
@@ -31,6 +32,7 @@ function Animal() {
   return (
     <>
       <group position-x={-1} position-z={-9}>
+        <ClickableCircle isLeft={false} {...props} />
         <group position-y={0.25}>
           {/* glass */}
           <mesh receiveShadow castShadow>

@@ -16,7 +16,7 @@ function Desktop() {
           <mesh rotation-z={0.1} position-y={0.2} receiveShadow castShadow>
             <boxGeometry args={[0.2, 2, 3.4]} />
             <meshStandardMaterial
-              color={"#535353"}
+              color={"#e9cfcf"}
               roughness={0.2}
               metalness={0.8}
             />
@@ -34,7 +34,7 @@ function Desktop() {
           <mesh position-x={-0.3} position-y={-0.5} receiveShadow castShadow>
             <boxGeometry args={[0.2, 2, 0.5]} />
             <meshStandardMaterial
-              color={"#535353"}
+              color={"#e9cfcf"}
               roughness={0.2}
               metalness={0.8}
             />
@@ -43,7 +43,7 @@ function Desktop() {
           <mesh position-x={-0.2} position-y={-0} receiveShadow castShadow>
             <boxGeometry args={[0.3, 0.5, 0.3]} />
             <meshStandardMaterial
-              color={"#535353"}
+              color={"#e9cfcf"}
               roughness={0.2}
               metalness={0.8}
             />
@@ -52,7 +52,7 @@ function Desktop() {
           <mesh receiveShadow castShadow position-x={-0.3} position-y={-1.5}>
             <boxGeometry args={[0.6, 0.1, 2]} />
             <meshStandardMaterial
-              color={"#535353"}
+              color={"#e9cfcf"}
               roughness={0.2}
               metalness={0.8}
               side={THREE.DoubleSide}

@@ -16,7 +16,7 @@ function Table({ pos, rot }) {
       <mesh position={pos} rotation={rot} receiveShadow castShadow>
         <boxGeometry args={[4, 0.3, 6]} />
         <meshStandardMaterial
-          color={"#6d6e6d"}
+          color={"#424242"}
           map={texturesWood.map}
           roughnessMap={texturesWood.roughnessMap}
           roughnessMap-colorSpace={THREE.NoColorSpace}

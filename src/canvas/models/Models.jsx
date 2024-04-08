@@ -1,16 +1,15 @@
-import React, { useRef } from "react";
+import React from "react";
 import Desktop from "./Desktop";
 import Art from "./Art";
 import WorldMap from "./WorldMap";
 import Animal from "./Animal";
-import Room from "../room/Room";
 import { useFrame } from "@react-three/fiber";
-import gsap from "gsap/gsap-core";
 
 function Models({ groupRef, ...props }) {
   let yRot = 1;
   // let xPos = 30;
 
+  // init animation when mounted
   useFrame(() => {
     // y Rotation animation
     if (yRot > 0) {

@@ -11,7 +11,6 @@ function CanvasScreen(props) {
   const orbitRef = useRef();
   return (
     <Suspense fallback={<LoadingPage />}>
-      {/* <LoadingPage /> */}
       <Canvas
         shadows
         camera={{

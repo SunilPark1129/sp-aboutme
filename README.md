@@ -10,6 +10,9 @@
 ![스크린샷 2024-04-07 215951](https://github.com/SunilPark1129/sp-aboutme/assets/106734133/3e614555-c7dd-4a03-8395-4f37054b4235)
 ![스크린샷 2024-04-07 215843](https://github.com/SunilPark1129/sp-aboutme/assets/106734133/11e71320-d21e-4001-8fbb-9ed72c0c6dd0)
 
+![스크린샷 2024-04-07 215818](https://github.com/SunilPark1129/sp-aboutme/assets/106734133/d193da39-25bc-4baa-9bf9-423a3f6cade4)
+![스크린샷 2024-04-08 062235](https://github.com/SunilPark1129/sp-aboutme/assets/106734133/845dcd85-366f-46b7-ac68-84d885984db3)
+![스크린샷 2024-04-08 062224](https://github.com/SunilPark1129/sp-aboutme/assets/106734133/f2290d9e-8690-4df6-88f8-35155c30cee2)
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

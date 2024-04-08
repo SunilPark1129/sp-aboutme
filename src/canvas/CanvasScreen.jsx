@@ -9,6 +9,8 @@ import { resetPosition } from "../assets/cameraPositionData";
 
 function CanvasScreen(props) {
   const orbitRef = useRef();
+  const groupRef = useRef();
+
   return (
     <Suspense fallback={<LoadingPage />}>
       <Canvas
@@ -22,10 +24,10 @@ function CanvasScreen(props) {
         }}
       >
         <Camera orbitRef={orbitRef} getCamera={props.getCamera} />
-        <Lights />
-        <group>
+        <group ref={groupRef}>
+          <Lights />
           <Room />
-          <Models {...props} orbitRef={orbitRef} />
+          <Models {...props} orbitRef={orbitRef} groupRef={groupRef} />
         </group>
       </Canvas>
     </Suspense>

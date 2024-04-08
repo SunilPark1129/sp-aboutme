@@ -8,7 +8,6 @@ function App() {
   const [item, setItem] = useState(null);
   const [camera, setCamera] = useState(null);
 
-  //
   function getTopic(x) {
     setMeshTopic(x);
   }

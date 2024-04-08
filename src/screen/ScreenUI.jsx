@@ -1,6 +1,7 @@
 import gsap from "gsap/gsap-core";
 import React, { useEffect, useState } from "react";
 import { resetPosition } from "../assets/cameraPositionData";
+import { aboutMeData } from "../assets/aboutMeData";
 
 function ScreenUI({ meshTopic, setMeshTopic, camera }) {
   function clickHandler() {
@@ -41,18 +42,9 @@ function ScreenUI({ meshTopic, setMeshTopic, camera }) {
             </button>
           </header>
           <div className="screen_body">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
-              tempore aspernatur unde iste delectus omnis doloribus similique
-              quibusdam labore? Molestias?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit voluptate iure, quas distinctio ducimus quidem quo
-              praesentium quibusdam perspiciatis exercitationem dolores
-              molestias, vitae magni corporis pariatur inventore aut veniam
-              nobis?
-            </p>
+            {aboutMeData[meshTopic].map((item, key) => (
+              <p key={key}>{item}</p>
+            ))}
           </div>
         </div>
       )}

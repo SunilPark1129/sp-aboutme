@@ -1,5 +1,6 @@
 # ABOUT ME 3D
 ![main](https://github.com/SunilPark1129/sp-aboutme/assets/106734133/ed023139-77ba-4b57-91c5-decbe3d269a9)
+![sketch](https://github.com/SunilPark1129/sp-aboutme/assets/106734133/a86c8c9e-d80d-452f-bd67-fc2a6a54e7dc)
 
 Go to website - [Link](https://sp-aboutme.netlify.app/)<br>
 About Me 3D v1 04/08/24

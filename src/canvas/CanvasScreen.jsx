@@ -1,4 +1,5 @@
-import React, { memo, useRef } from "react";
+import LoadingPage from "../screen/LoadingPage";
+import React, { Suspense, memo, useRef } from "react";
 import { Canvas } from "@react-three/fiber";
 import Camera from "./camera/Camera";
 import Room from "./room/Room";
@@ -9,21 +10,26 @@ import { resetPosition } from "../assets/cameraPositionData";
 function CanvasScreen(props) {
   const orbitRef = useRef();
   return (
-    <Canvas
-      shadows
-      camera={{
-        position: [
-          resetPosition.camera.x,
-          resetPosition.camera.y,
-          resetPosition.camera.z,
-        ],
-      }}
-    >
-      <Camera orbitRef={orbitRef} getCamera={props.getCamera} />
-      <Lights />
-      <Room />
-      <Models {...props} orbitRef={orbitRef} />
-    </Canvas>
+    <Suspense fallback={<LoadingPage />}>
+      {/* <LoadingPage /> */}
+      <Canvas
+        shadows
+        camera={{
+          position: [
+            resetPosition.camera.x,
+            resetPosition.camera.y,
+            resetPosition.camera.z,
+          ],
+        }}
+      >
+        <Camera orbitRef={orbitRef} getCamera={props.getCamera} />
+        <Lights />
+        <group>
+          <Room />
+          <Models {...props} orbitRef={orbitRef} />
+        </group>
+      </Canvas>
+    </Suspense>
   );
 }
 

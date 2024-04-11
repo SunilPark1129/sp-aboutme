@@ -30,10 +30,10 @@ function ClickableCircle({ isLeft, topic, getTopic, orbitRef }) {
       onClick={clickHandler}
       onPointerEnter={pointerEnterHandler}
       onPointerLeave={pointerLeaveHandler}
-      position-y={topic === "Hobby" ? 3 : 2}
+      position-y={topic === "Hobby" ? 4 : 3}
       position={isLeft ? [1, 0, 0] : [0, 0, 1]}
     >
-      <sphereGeometry args={[0.2]} />
+      <sphereGeometry args={[0.3]} />
       <meshBasicMaterial color={hasHovered ? "#676fdb" : "#fff"} />
       <Text
         fontSize={0.4}

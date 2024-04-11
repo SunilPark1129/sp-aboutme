@@ -33,15 +33,15 @@ function ClickableCircle({ isLeft, topic, getTopic, orbitRef }) {
       position-y={topic === "Hobby" ? 4 : 3}
       position={isLeft ? [1, 0, 0] : [0, 0, 1]}
     >
-      <sphereGeometry args={[0.3]} />
-      <meshBasicMaterial color={hasHovered ? "#676fdb" : "#fff"} />
+      <sphereGeometry args={[0.4]} />
+      <meshBasicMaterial color={"#fff"} />
       <Text
-        fontSize={0.4}
-        position-y={0.6}
+        fontSize={0.7}
+        position-y={1}
         rotation-y={isLeft ? THREE.MathUtils.degToRad(90) : 0}
-        color={"#676fdb"}
+        color={"#ffffff"}
       >
-        {hasHovered ? topic : ""}
+        {hasHovered ? topic.toUpperCase() : ""}
       </Text>
     </mesh>
   );

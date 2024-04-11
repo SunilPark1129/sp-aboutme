@@ -6,7 +6,7 @@ import ClickableCircle from "./ClickableCircle";
 
 function Desktop(props) {
   const texturesDesktopImg = new THREE.TextureLoader().load(
-    "./image/desktop/vscodeimage.png"
+    "./image/desktop/profileimage.png"
   );
 
   return (
@@ -19,7 +19,7 @@ function Desktop(props) {
           <mesh rotation-z={0.1} position-y={0.2} receiveShadow castShadow>
             <boxGeometry args={[0.2, 2, 3.4]} />
             <meshStandardMaterial
-              color={"#e9cfcf"}
+              color={"#6e6e6e"}
               roughness={0.2}
               metalness={0.8}
             />
@@ -30,14 +30,14 @@ function Desktop(props) {
               castShadow
             >
               <planeGeometry args={[3.2, 1.8]} />
-              <meshBasicMaterial map={texturesDesktopImg} color={"#f3d5bc"} />
+              <meshBasicMaterial map={texturesDesktopImg} color={"#8b94aa"} />
             </mesh>
           </mesh>
 
           <mesh position-x={-0.3} position-y={-0.5} receiveShadow castShadow>
             <boxGeometry args={[0.2, 2, 0.5]} />
             <meshStandardMaterial
-              color={"#e9cfcf"}
+              color={"#6e6e6e"}
               roughness={0.2}
               metalness={0.8}
             />
@@ -46,7 +46,7 @@ function Desktop(props) {
           <mesh position-x={-0.2} position-y={-0} receiveShadow castShadow>
             <boxGeometry args={[0.3, 0.5, 0.3]} />
             <meshStandardMaterial
-              color={"#e9cfcf"}
+              color={"#6e6e6e"}
               roughness={0.2}
               metalness={0.8}
             />
@@ -55,7 +55,7 @@ function Desktop(props) {
           <mesh receiveShadow castShadow position-x={-0.3} position-y={-1.5}>
             <boxGeometry args={[0.6, 0.1, 2]} />
             <meshStandardMaterial
-              color={"#e9cfcf"}
+              color={"#6e6e6e"}
               roughness={0.2}
               metalness={0.8}
               side={THREE.DoubleSide}

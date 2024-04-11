@@ -44,16 +44,17 @@ function Animal(props) {
               clearcoat={1}
               transparent={true}
               transmission={0.95}
-              opacity={0.2}
-              reflectivity={0.8}
-              color={"#ffffff"}
+              opacity={0.3}
+              reflectivity={0.2}
+              color={"#7e7e7e"}
             />
             {/* water */}
             <mesh>
-              <boxGeometry args={[4, 2, 2]} />
+              <boxGeometry args={[4, 1.6, 2]} />
               <MeshTransmissionMaterial
                 transmissionSampler={true}
                 backside={true}
+                side={THREE.DoubleSide}
                 samples={10}
                 resolution={2048}
                 transmission={0.9}
@@ -74,9 +75,9 @@ function Animal(props) {
             </mesh>
           </mesh>
           {/* sand */}
-          <mesh position-y={-0.9} position-z={0.05}>
-            <boxGeometry args={[3.8, 0.1, 1.8]} />
-            <meshStandardMaterial color={"#ebe9a4"} />
+          <mesh position-y={-0.85} position-z={0.05}>
+            <boxGeometry args={[3.95, 0.25, 1.8]} />
+            <meshStandardMaterial color={"#e4b18f"} />
           </mesh>
           {/* edge */}
           <mesh position-x={-2.05} position-z={1.05} position-y={0}>

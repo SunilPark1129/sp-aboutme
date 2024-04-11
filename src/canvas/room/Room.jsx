@@ -1,81 +1,107 @@
-import { Text, useTexture } from "@react-three/drei";
+import { MeshReflectorMaterial, Text, useTexture } from "@react-three/drei";
 import React from "react";
 import * as THREE from "three";
 
 function Room() {
-  const texturesWall = useTexture({
-    map: "./image/wall/Wood_Wall_003_basecolor.jpg",
-    roughnessMap: "./image/wall/Wood_Wall_003_roughness.jpg",
-    normalMap: "./image/wall/Wood_Wall_003_normal.jpg",
-    displacementMap: "./image/wall/Wood_Wall_003_height.png",
-    aoMap: "./image/wall/Wood_Wall_003_ambientOcclusion.jpg",
+  const texturesRoom = useTexture({
+    map: "./image/room/Concrete_017_basecolor.jpg",
+    roughnessMap: "./image/room/Concrete_017_roughness.jpg",
+    normalMap: "./image/room/Concrete_017_normal.jpg",
+    displacementMap: "./image/room/Concrete_017_height.png",
+    aoMap: "./image/room/Concrete_017_ambientOcclusion.jpg",
   });
-  const texturesFloor = useTexture({
-    map: "./image/floor/Wood_Herringbone_Tiles_001_basecolor.jpg",
-    roughnessMap: "./image/floor/Wood_Herringbone_Tiles_001_roughness.jpg",
-    normalMap: "./image/floor/Wood_Herringbone_Tiles_001_normal.jpg",
-    displacementMap: "./image/floor/Wood_Herringbone_Tiles_001_height.png",
-    aoMap: "./image/floor/Wood_Herringbone_Tiles_001_ambientOcclusion.jpg",
-  });
-
   return (
     <>
       <group position-y={-5}>
         {/* wall */}
-        <mesh position-x={-11.5} position-y={6.5} receiveShadow>
-          <boxGeometry args={[1, 12, 24]} />
+        <mesh
+          position-x={-10.9}
+          position-y={6.5}
+          rotation-y={(Math.PI * 90) / 180}
+          receiveShadow
+        >
+          {/* <boxGeometry args={[1, 12, 24, 1, 255, 255]} /> */}
+          <planeGeometry args={[24, 12]} />
           <meshStandardMaterial
             color={"#999999"}
-            map={texturesWall.map}
-            roughnessMap={texturesWall.roughnessMap}
+            map={texturesRoom.map}
+            roughnessMap={texturesRoom.roughnessMap}
             roughnessMap-colorSpace={THREE.NoColorSpace}
-            normalMap={texturesWall.normalMap}
+            normalMap={texturesRoom.normalMap}
             normalMap-colorSpace={THREE.NoColorSpace}
-            normalScale={3}
-            displacementMap={texturesWall.displacementMap}
+            normalScale={5}
+            displacementMap={texturesRoom.displacementMap}
             displacementMap-colorSpace={THREE.NoColorSpace}
-            displacementScale={0}
-            displacementBias={-0}
-            aoMap={texturesWall.aoMap}
+            displacementScale={0.2}
+            displacementBias={-0.2}
+            aoMap={texturesRoom.aoMap}
           />
+        </mesh>
+        <mesh position-x={-11.5} position-y={6.5}>
+          <boxGeometry args={[1, 12, 24, 1, 255, 255]} />
+          <meshStandardMaterial color={"#000"} />
         </mesh>
 
         {/* wall */}
-        <mesh position-z={-11.5} position-y={6.5} receiveShadow>
-          <boxGeometry args={[24, 12, 1]} />
+        <mesh position-z={-10.9} position-y={6.5} receiveShadow>
+          <planeGeometry args={[24, 12]} />
           <meshStandardMaterial
             color={"#999999"}
-            map={texturesWall.map}
-            roughnessMap={texturesWall.roughnessMap}
+            map={texturesRoom.map}
+            roughnessMap={texturesRoom.roughnessMap}
             roughnessMap-colorSpace={THREE.NoColorSpace}
-            normalMap={texturesWall.normalMap}
+            normalMap={texturesRoom.normalMap}
             normalMap-colorSpace={THREE.NoColorSpace}
-            normalScale={3}
-            displacementMap={texturesWall.displacementMap}
+            normalScale={5}
+            displacementMap={texturesRoom.displacementMap}
             displacementMap-colorSpace={THREE.NoColorSpace}
-            displacementScale={0}
-            displacementBias={-0}
-            aoMap={texturesWall.aoMap}
+            displacementScale={0.2}
+            displacementBias={-0.2}
+            aoMap={texturesRoom.aoMap}
           />
+        </mesh>
+        <mesh
+          position-z={-11.5}
+          position-y={6.5}
+          rotation-y={(Math.PI * 90) / 180}
+        >
+          <boxGeometry args={[1, 12, 24, 1, 255, 255]} />
+          <meshStandardMaterial color={"#000"} />
         </mesh>
 
         {/* floor */}
-        <mesh receiveShadow>
-          <boxGeometry args={[24, 1, 24]} />
-          <meshStandardMaterial
-            color={"#4e4e4e"}
-            map={texturesFloor.map}
-            roughnessMap={texturesFloor.roughnessMap}
+        <mesh rotation-x={(Math.PI * -90) / 180} position-y={0.5} receiveShadow>
+          <planeGeometry args={[24, 24]} />
+          <MeshReflectorMaterial
+            blur={[0, 0]}
+            mixBlur={0.5}
+            mixStrength={1.5}
+            mixContrast={0.8}
+            resolution={2048}
+            mirror={0.2}
+            depthScale={0.8}
+            minDepthThreshold={0.3}
+            maxDepthThreshold={0.3}
+            depthToBlurRatioBias={0.5}
+            distortion={1}
+            color={"#a5a5a5"}
+            map={texturesRoom.map}
+            roughnessMap={texturesRoom.roughnessMap}
             roughnessMap-colorSpace={THREE.NoColorSpace}
-            normalMap={texturesFloor.normalMap}
+            normalMap={texturesRoom.normalMap}
             normalMap-colorSpace={THREE.NoColorSpace}
-            normalScale={1}
-            displacementMap={texturesFloor.displacementMap}
+            normalScale={0.1}
+            displacementMap={texturesRoom.displacementMap}
             displacementMap-colorSpace={THREE.NoColorSpace}
-            displacementScale={0}
-            displacementBias={-0}
-            aoMap={texturesFloor.aoMap}
+            aoMap={texturesRoom.aoMap}
+            debug={1}
+            reflectorOffset={0.1}
           />
+        </mesh>
+
+        <mesh position-y={-0.02}>
+          <boxGeometry args={[24, 1, 24]} />
+          <meshStandardMaterial color={"#000"} />
         </mesh>
 
         {/* ceiling */}

@@ -4,25 +4,26 @@ import * as THREE from "three";
 
 function Table({ pos, rot }) {
   const texturesWood = useTexture({
-    map: "./image/model_wood/Wood_025_basecolor.jpg",
-    roughnessMap: "./image/model_wood/Wood_025_roughness.jpg",
-    normalMap: "./image/model_wood/Wood_025_normal.jpg",
-    displacementMap: "./image/model_wood/Wood_025_height.png",
-    aoMap: "./image/model_wood/Wood_025_ambientOcclusion.jpg",
+    map: "./image/wood/Wood_Crate_001_basecolor.jpg",
+    roughnessMap: "./image/wood/Wood_Crate_001_roughness.jpg",
+    normalMap: "./image/wood/Wood_Crate_001_normal.jpg",
+    displacementMap: "./image/wood/Wood_Crate_001_height.png",
+    aoMap: "./image/wood/Wood_Crate_001_ambientOcclusion.jpg",
   });
+
   return (
     <>
       {/* table */}
       <mesh position={pos} rotation={rot} receiveShadow castShadow>
         <boxGeometry args={[4, 0.3, 6]} />
         <meshStandardMaterial
-          color={"#424242"}
+          color={"#747474"}
           map={texturesWood.map}
           roughnessMap={texturesWood.roughnessMap}
           roughnessMap-colorSpace={THREE.NoColorSpace}
           normalMap={texturesWood.normalMap}
           normalMap-colorSpace={THREE.NoColorSpace}
-          normalScale={1}
+          normalScale={5}
           displacementMap={texturesWood.displacementMap}
           displacementMap-colorSpace={THREE.NoColorSpace}
           displacementScale={0}
@@ -38,7 +39,7 @@ function Table({ pos, rot }) {
         >
           <cylinderGeometry args={[0.1, 0.1, 4]} />
           <meshStandardMaterial
-            color={"#575757"}
+            color={"#1f1f1f"}
             roughness={0.5}
             metalness={0.5}
           />
@@ -52,7 +53,7 @@ function Table({ pos, rot }) {
         >
           <cylinderGeometry args={[0.1, 0.1, 4]} />
           <meshStandardMaterial
-            color={"#575757"}
+            color={"#1f1f1f"}
             roughness={0.5}
             metalness={0.5}
           />
@@ -66,7 +67,7 @@ function Table({ pos, rot }) {
         >
           <cylinderGeometry args={[0.1, 0.1, 4]} />
           <meshStandardMaterial
-            color={"#575757"}
+            color={"#1f1f1f"}
             roughness={0.5}
             metalness={0.5}
           />
@@ -80,7 +81,7 @@ function Table({ pos, rot }) {
         >
           <cylinderGeometry args={[0.1, 0.1, 4]} />
           <meshStandardMaterial
-            color={"#575757"}
+            color={"#1f1f1f"}
             roughness={0.5}
             metalness={0.5}
           />

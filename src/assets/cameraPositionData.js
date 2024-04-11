@@ -16,7 +16,7 @@ export const positionData = {
     },
   },
 
-  Skill: {
+  Me: {
     camera: {
       ...fixedOptions,
       x: 1,
@@ -31,7 +31,7 @@ export const positionData = {
     },
   },
 
-  Me: {
+  Skill: {
     camera: {
       ...fixedOptions,
       x: -1,

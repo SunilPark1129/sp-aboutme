@@ -19,7 +19,7 @@ The 'About Sunil' website is a 3D project using React Three Fiber to showcase in
 |Explore|<img src="https://github.com/SunilPark1129/sp-aboutme/assets/106734133/d9a31612-0cb9-44e5-847a-3e97a1632fcc" height="400"><br><br>Navigate through the 3D room by manually moving the camera.|
 |Loading|<img src="https://github.com/SunilPark1129/sp-aboutme/assets/106734133/11e71320-d21e-4001-8fbb-9ed72c0c6dd0" height="400"><br><br>Display loading screens until all models are rendered, using React Suspense.|
 |Auto Animation|<img src="https://github.com/SunilPark1129/sp-aboutme/assets/106734133/19028fa8-c221-49dc-9b26-eb3b8383bacc" height="400"><br><br>Once all models are rendered and the loading screen disappears, animations are triggered automatically.|
-|Dark Mode|<img src="https://github.com/SunilPark1129/sp-aboutme/assets/106734133/86209df4-ea01-4b6b-923a-d1197cf9dfaa" height="400"><br><br>Dark mode is available to create a darker atmosphere within the room.|
+|Dark Mode|<img src="https://github.com/SunilPark1129/sp-aboutme/assets/106734133/86209df4-ea01-4b6b-923a-d1197cf9dfaa" height="400"><br><br>Dark mode is available to create a darker atmosphere.|
 |Updated Quality|<img src="https://github.com/SunilPark1129/sp-aboutme/assets/106734133/ed023139-77ba-4b57-91c5-decbe3d269a9" width="400"><img src="https://github.com/SunilPark1129/sp-aboutme/assets/106734133/2d2c730c-ad68-49fb-9209-c9920eb3ca4b" width="400"><br><br>Upgraded from version 1 to version 2, enhancing the quality of the models.|
 
 

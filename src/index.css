@@ -63,7 +63,7 @@
   stroke: #36447e;
 }
 
-.bg__btn:has(.bg__btn__circle--active) svg {
+.bg__btn--active svg {
   stroke: #fff;
 }
 
@@ -155,10 +155,11 @@
   height: 100%;
   position: absolute;
   animation: 1s spin infinite;
+  will-change: transform;
+}
 
-  &:nth-of-type(2) {
-    animation-delay: 0.15s;
-  }
+.loading__bar div:nth-of-type(2) {
+  animation-delay: 0.15s;
 }
 
 @keyframes spin {

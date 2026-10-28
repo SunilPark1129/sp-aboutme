@@ -4,13 +4,14 @@ export const aboutMeData = {
     "In addition, I enjoy playing video games, editing images and videos, painting, watching YouTube videos, playing tennis/ping pong, and learning about different cultures.",
   ],
   Skill: [
-    "I am proficient in include (April 8, 2024):",
+    "I am proficient in include:",
     "HTML, CSS, JavaScript, TypeScript, React, Three.js, R3F, SCSS, Styled-Components, Tailwind CSS, Material-UI, RESTful API, Redux, React Query, Jest, Node.js, Git, GitHub, Figma.",
     "Among these, my top three confident skills are React, CSS, and Redux.",
   ],
   Me: [
     "My name is Sunil Park, and I am a frontend web developer. I majored in Information Technology at Rutgers University in New Brunswick, with a minor in Japanese.",
-    "After graduating, I have been consistently studying web development for 2 years.",
+    "Fun fact about me: after graduating, I have been consistently studying web development for 2 years and made over 100 projects during that moment.",
+    "Now I am working as a fullstack developer.",
     "Feel free to reach out anytime via email at sunilpark1129@gmail.com.",
   ],
   Country: [
